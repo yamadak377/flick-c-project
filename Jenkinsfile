@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'small_p', url: 'https://github.com/yamadak377/flick-c-project.git'
+                git branch: 'pixel8_l', url: 'https://github.com/yamadak377/flick-c-project.git'
             }
         }
         stage('Build') {
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat '.\\c_flick_test.exe small_p'
+                bat '.\\c_flick_test.exe pixel8_l'
             }
         }
     }
