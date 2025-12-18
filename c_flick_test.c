@@ -22,6 +22,7 @@ int main( int argc,char *argv[] ){
     {
         printf("Usage:c_test pixel8a_p/pixel8a_l/pixel8_p/pixel8_l/small_p/small_l\n");        
     }
+    printf("Display=%s\n",argv[1]);
     
     static int s_P[6][5] = {
         //      portrate                landscape
