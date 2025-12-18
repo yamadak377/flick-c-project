@@ -3,13 +3,13 @@
 #include <string.h>
 #include <unistd.h>
 
-int m_tap_cmd( int x,int y )
+void m_tap_cmd( int x,int y )
 {
     char s_cmd[80];
     sprintf( s_cmd,"adb shell input tap %d %d",x,y );
     system( s_cmd );
 }
-int m_swipe_cmd( int x,int y,int xs,int ys )
+void m_swipe_cmd( int x,int y,int xs,int ys )
 {
     char s_cmd[80];
     sprintf( s_cmd,"adb shell input swipe %d %d %d %d",x,y,xs,ys );
@@ -32,7 +32,7 @@ int main( int argc,char *argv[] ){
     };
     
     int nX,nY,nW,nH,nS;
-    int p;
+    int p=0;
     
     if (      strcmp(argv[1],"pixel8a_p" ) == 0 )   p=0;
     else if ( strcmp(argv[1],"pixel8a_l" ) == 0 )   p=1;
