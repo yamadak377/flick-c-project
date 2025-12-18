@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Às‚µ‚ÄŒ‹‰Ê‚ğŠm”F
-                bat '.\\c_flick_test.exe small_p'
+                bat '.\\c_flick_test.exe pixel8a_p'
             }
         }
     }
