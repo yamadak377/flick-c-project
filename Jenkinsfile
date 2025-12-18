@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Às‚µ‚ÄŒ‹‰Ê‚ğŠm”F
-                bat '.\\c_flick_test.exe'
+                bat '.\\c_flick_test.exe small_p'
             }
         }
     }
